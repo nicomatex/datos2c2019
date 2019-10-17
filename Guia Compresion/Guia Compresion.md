@@ -109,32 +109,32 @@ calcular cuanto se puede comprimir un string
 
 **Respuesta:** Es verdadero. La entropia se puede pensar como una medida de la cantidad de _informacion pura_ que contiene un archivo, es decir, informacion no repetida ni de patrones. Esta cantidad de informacion pura tiene una correlacion directa con _cuanto_ se puede comprimir un archivo.
 
---------
+
 
 **Afirmacion B:** Una forma posible de comprimir un stream de datos es utilizar un huffman estático.
 
 **Respuesta:** Es falso. El algoritmo de Huffman estatico requiere saber de antemano la cantidad de ocurrencias de cada caracter dentro del archivo, lo cual es imposible si se trata de un stream de datos, por lo que no seria posible comprimirlo usando dicho algoritmo.
 
---------
+
 
 **Afirmacion C:** La entropia puede utilizarse para construir clasificadores de texto.
 
 **Respuesta:** Es FALSO. Se puede clasificar texto utilizando PAQ, que es una tecnica de compresion moderna , que permite en ciertos casos determinar distancia entre textos.
 
--------
+
 
 **Afirmacion D:** Un compresor estadistico estático comprime siempre mejor que un compresor estadístico
 dinámico.
 
 **Respuesta:** Es VERDADERO. Un compresor estadistico estatico tiene de antemano la informacion respecto de la cantidad de repeticiones de cada caracter en el documento, por lo que los primeros caracteres del mismo se comprimen de forma tan eficiente como los demas, a diferencia de lo que sucede en un compresor dinamico. Un compresor dinamico puede ser _en el mejor de los casos_ tan bueno como uno estatico, si todos los caracteres son equiprobables. 
 
------
+
 **Afirmacion E:** Podemos determinar la longitud final del archivo comprimido utilizando huffman estático de
 orden 1, calculando la entropía y multiplicándola por la cantidad de caracteres del archivo.
 
 **Respuesta:** Dudoso. Esto es cierto solo en el caso en el que la entropia resulte ser un numero entero, dado que el algoritmo de Huffman codifica los caracteres en un numero entero de bits.
 
------
+
 
 **Afirmacion F:** Tenemos 2 archivos, uno con longitud pequeña y el otro muy grande que se comprimen
 utilizando huffman estático de orden 5. Si observamos que tienen la mismas tablas de
